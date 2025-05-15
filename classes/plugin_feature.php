@@ -17,6 +17,7 @@
 namespace qbank_qtoactivity;
 
 use core_question\local\bank\plugin_features_base;
+use core_question\local\bank\view;
 
 /**
  * Adds question to activity bulk action in the bulk actions list.
@@ -34,9 +35,9 @@ class plugin_feature extends plugin_features_base {
         ];
     }
 
-    public function get_bulk_actions(): array {
+    public function get_bulk_actions(?view $qbank = null): array {
         return [
-            new bulk_add_action()
+            new bulk_add_action($qbank),
         ];
     }
 }

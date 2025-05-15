@@ -18,7 +18,7 @@
  * Plugin version and other meta-data are defined here.
  *
  * @package     qbank_qtoactivity
- * @copyright   2023 Safat Shahin <safatshahin@yahoo.com>
+ * @copyright   2023 Safat Shahin <safatshahin@yahoo.com>, 2025 Farly <farly.dwiputra@pesonaedu.com>
  * @author      Luke Purnel, Henry Campbell, Mark Hay, Harrison Liddell
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -26,7 +26,11 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'qbank_qtoactivity';
-$plugin->release = '1.0.0';
-$plugin->version = 2023022000;
+$plugin->release = '1.0.1';
+$plugin->version = 2025051500;
 $plugin->requires = 2022041900;
+$plugin->supported = [
+    401,
+    405
+];
 $plugin->maturity = MATURITY_STABLE;
